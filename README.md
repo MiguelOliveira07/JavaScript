@@ -1,2 +1,2 @@
 # JavaScript
- Estudos e projetos da linguagem JavaScript
+ Estudos e projetos da linguagem JavaScript 2025
