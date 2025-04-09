@@ -1,6 +1,3 @@
-const f = function (n1, n2) {
-    return n1 * n2
-}
+const f =new Function ("v1","v2","v3","return v1+v2+v3")
 
-f(10,5)
-console.log(f)
+console.log(f(1, 2,2));  
