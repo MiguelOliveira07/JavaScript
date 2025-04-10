@@ -8,4 +8,4 @@ const soma = (...valores)=>{
     somar(valores)
 }
 
-console.log(soma(1,2,3,4,5)) 
+console.log(soma(1,2)) 
