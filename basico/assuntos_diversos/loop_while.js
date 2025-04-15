@@ -24,14 +24,14 @@ console.log('fim do programa')
 */
 
 let n=0
-let max=1000
+let max=1000000
 let pares=0
 
 for(i=n;i<max;i++){
     if (i%2!=0){
-        continue
+        console.log(i)
     }
-    pares++
+     pares++
 }
 
 console.log('Fim do programa')
