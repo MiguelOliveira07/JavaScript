@@ -5,7 +5,13 @@ const dc4=document.getElementById('c4')
 
 const arrrayElementos=[dc1, dc2, dc3, dc4]
 
-const colecaoHTML=document.getElementsByTagName('div')
+let colecaaoHTML=document.getElementsByTagName('div')
+const colecaoHTML=[...document.getElementsByTagName('div')]
 
-console.log(arrrayElementos)
+// console. log(arrrayElementos)
 console.log(colecaoHTML)
+console.log(colecaaoHTML)
+
+colecaoHTML.map((e)=>{
+    console.log(e)
+})
