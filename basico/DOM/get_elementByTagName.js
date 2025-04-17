@@ -8,7 +8,7 @@ const arrrayElementos=[dc1, dc2, dc3, dc4]
 let colecaaoHTML=document.getElementsByTagName('div')
 const colecaoHTML=[...document.getElementsByTagName('div')]
 
-// console. log(arrrayElementos)
+// console.log(arrrayElementos)
 console.log(colecaoHTML)
 console.log(colecaaoHTML)
 
