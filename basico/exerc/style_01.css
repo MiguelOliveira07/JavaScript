@@ -17,23 +17,19 @@ main {
     padding: 20px;
     width: 200px;
 }
-.botoes{
-    display: flex;
-    flex-direction: column;
-    height: 160px;
-}
 
-.botao {
-    height: 100px;
+
+#btn_transferir {
+    max-height: 100px;
     width: 100px;
     background-color: rgb(126, 130, 131);
     border: 1px solid gray;
     border-radius: 5px;
-    margin: 0px 15px 15px 15px;
+    margin: 20px;
 
 }
 
-.botao:hover {
+#btn_transferir:hover {
     background-color: rgb(127, 219, 255);
 }
 

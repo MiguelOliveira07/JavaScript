@@ -1,8 +1,6 @@
 const caixa_01 = document.getElementById("caixa1");
-const btn_copiar = document.getElementById("btn_copy");
-const btn_voltar = document.getElementById("btn_back");
-const btn_limpar = document.getElementById("btn_limpar");
 const caixa_02 = document.getElementById("caixa2");
+const btn_transferir = document.getElementById("btn_transferir");
 const todos_cursos = [...document.querySelectorAll(".curso")];
 
 todos_cursos.map((el) => {
@@ -12,19 +10,16 @@ todos_cursos.map((el) => {
   });
 });
 
-btn_copiar.addEventListener("click", () => {
+btn_transferir.addEventListener("click", () => {
   const os_selecionados = [...document.querySelectorAll(".curso_selecionado")];
+  const os_não_selecionados = [
+    ...document.querySelectorAll(".curso:not(.curso_selecionado)"),
+  ];
   //   console.log(os_selecionados)
   os_selecionados.map((elemento) => {
     caixa_02.appendChild(elemento);
   });
-});
-
-btn_voltar.addEventListener("click", () => {
-  const os_selecionados = [...document.querySelectorAll(".curso_selecionado")];
-  //   console.log(os_selecionados)
-  os_selecionados.map((elemento) => {
+  os_não_selecionados.map((elemento) => {
     caixa_01.appendChild(elemento);
   });
 });
-
