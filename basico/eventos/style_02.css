@@ -1,0 +1,54 @@
+* {
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+main {
+    display: flex;
+}
+
+.caixa {
+    border: 3px solid darkblue;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 80vh;
+    padding: 20px;
+    width: 200px;
+}
+
+
+#btn_transferir {
+    max-height: 100px;
+    width: 100px;
+    background-color: rgb(126, 130, 131);
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 20px;
+
+}
+
+#btn_transferir:hover {
+    background-color: rgb(127, 219, 255);
+}
+
+.curso {
+    background-color: rgb(136, 130, 130);
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+.cursos:hover {
+    background-color: aliceblue;
+}
+
+.curso_selecionado {
+    background-color: rgb(66, 66, 187) !important;
+    color: white !important;
+}
+
