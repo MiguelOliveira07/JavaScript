@@ -5,6 +5,11 @@
     border: 1px solid #97cf77;
     background-color: antiquewhite;
     place-items: center;
+    padding: 10px;
+}
+
+h1{
+    font-size: 1.3rem;
 }
 
 .curso {
