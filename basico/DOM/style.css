@@ -1,4 +1,13 @@
-div {
+#caixa_01{
+    width: 90vw;
+    height: 90vh;
+    display: grid;
+    border: 1px solid #97cf77;
+    background-color: antiquewhite;
+    place-items: center;
+}
+
+.curso {
     align-items: center;
     border: 2px solid gray;
     border-radius: 10px;
@@ -10,7 +19,7 @@ div {
 }
 
 
-div:hover {
+.curso:hover {
     border: 2px solid red;
 }
 
