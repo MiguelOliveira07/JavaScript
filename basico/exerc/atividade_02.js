@@ -36,17 +36,34 @@ cursos.map((elemento, chave) => {
   caixa_cursos.appendChild(novo_elemento);
 });
 
+const verificr_curso_selecionado = () => {
+  const todos_radios = [...document.querySelectorAll("input[type=radio] ")];
+  const radio_selecionado = todos_radios.filter((ele, ind, arr) => {
+    return ele.checked;
+  });
+  return radio_selecionado[0];
+};
+
 btn_selecionar.addEventListener("click", (evt) => {
-    const todos_radios = [...document.querySelectorAll('input[type=radio] ')]
-    let radio_selecionado = todos_radios.filter((ele, ind, arr)=>{
-        return ele.checked
-    })
-    radio_selecionado = radio_selecionado[0]
-    const curso_selecionado = radio_selecionado.parentNode.parentNode.firstChild.textContent
-    alert('Curso selecionado: ' + curso_selecionado)
-    // console.log(curso_selecionado)
+  const rs = verificr_curso_selecionado();
+  if (rs !== undefined) {
+    const curso_selecionado = rs.parentNode.parentNode.firstChild.textContent;
+    alert("Curso selecionado: " + curso_selecionado);
+  } else {
+    alert("Selecione um Curso");
+  }
 });
 
+btn_remover.addEventListener("click", (ele, ind, arr) => {
+  const rs = verificr_curso_selecionado();
+  try {
+    const curso_selecionado = rs.parentNode.parentNode;
+    curso_selecionado.remove();
+    alert("O curso: " + curso_selecionado.textContent + ", foi removido.");
+  } catch {
+    alert("Selecione um Curso");
+  }
+});
 
 // parentNode
 // childNodes [nodenumber]
