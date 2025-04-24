@@ -38,9 +38,19 @@ cursos.map((elemento, chave) => {
 
 btn_selecionar.addEventListener("click", (evt) => {
     const todos_radios = [...document.querySelectorAll('input[type=radio] ')]
-    const radio_selecionado = todos_radios.filter((ele)=>{
+    let radio_selecionado = todos_radios.filter((ele, ind, arr)=>{
         return ele.checked
     })
-    console.log(radio_selecionado.parentNode)
+    radio_selecionado = radio_selecionado[0]
+    const curso_selecionado = radio_selecionado.parentNode.parentNode.firstChild.textContent
+    alert('Curso selecionado: ' + curso_selecionado)
+    // console.log(curso_selecionado)
 });
 
+
+// parentNode
+// childNodes [nodenumber]
+// firstChild
+// lastChild
+// nextSibling
+// previousSibling
