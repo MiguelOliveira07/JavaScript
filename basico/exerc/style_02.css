@@ -1,0 +1,86 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+.caixa {
+    background-color: rgb(207, 207, 207);
+    height: 80vh;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin: 10px;
+    border: 3px solid gray;
+
+    & h1 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    & input {
+        margin-bottom: 20px;
+        height: 40px;
+        padding: 5px;
+    }
+
+    & .botao {
+        width: 150px;
+        border: 1px solid darkblue;
+        background-color: rgb(68, 68, 224);
+        height: 50px;
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        border-radius: 5px;
+    }
+
+    & .botao:hover {
+        background-color: #2663d363;
+        border: 1px solid #0059ff63;
+    }
+
+}
+
+.curso {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #6dade6;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: .6s;
+    
+}
+.comando{
+    align-items: center;
+    height: 50px;
+    padding: 6px;
+}
+
+.curso:hover{
+       background-color: rgb(199, 151, 89);
+   }
+
+.cursos_selecionados {
+    width: 20vw;
+    border: 1px solid rgb(3, 97, 0);
+    background-color: rgb(68, 224, 76);
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
