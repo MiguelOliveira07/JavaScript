@@ -20,7 +20,7 @@ const criar_novo_curso = (curso) => {
 
 const CursoSelecionado = () => {
   const curso_Selecionados = [...document.querySelectorAll("._selecionado")];
-
+  return curso_Selecionados[0];
 };
 
 const caixa_interacao = document.querySelector("#caixa_interações");
@@ -52,45 +52,45 @@ cursos.map((elemento, chave) => {
 });
 
 btn_selecionar.addEventListener("click", (evt) => {
-  const rs = verificr_curso_selecionado();
-  if (rs !== undefined) {
-    const curso_selecionado = rs.parentNode.parentNode.firstChild.textContent;
-    alert("Curso selecionado: " + curso_selecionado);
-  } else {
+  const cs = CursoSelecionado();
+  try {
+    alert("Curso selecionado: " + cs.textContent);
+  } catch {
     alert("Selecione um Curso");
   }
 });
 
 btn_remover.addEventListener("click", (ele, ind, arr) => {
-  const rs = verificar_curso_selecionado();
+  const cs = CursoSelecionado();
   try {
-    const curso_selecionado = rs.parentNode.parentNode;
-    curso_selecionado.remove();
-    alert("O curso: " + curso_selecionado.textContent + ", foi removido.");
+    cs.remove();
+    alert("O curso: " + cs.textContent + ", foi removido.");
   } catch {
     alert("Selecione um Curso");
   }
 });
 
 btn_adicionar_antes.addEventListener("click", (evt) => {
-  const rs = verificr_curso_selecionado();
-  if (rs !== undefined) {
-    const curso_selecionado = rs.parentNode.parentNode;
-    const novo_curso = criar_novo_curso(nome_curso.value);
-    caixa_cursos.insertBefore(novo_curso, curso_selecionado);
-  } else {
-    alert("Selecione um Curso");
+  try{
+    if(nome_curso.value!= ""){
+      const novo_curso = criar_novo_curso(nome_curso.value)
+      caixa_cursos.insertBefore(novo_curso, CursoSelecionado());
+    } else {
+      alert("Digite um curso");
+    }
+  } catch{
+    alert('Selecione um curso.')
   }
 });
 
 btn_adicionar_depois.addEventListener("click", (evt) => {
-  const rs = verificr_curso_selecionado();
-  if (rs !== undefined) {
-    const curso_selecionado = rs.parentNode.parentNode;
+try{if (nome_curso.value !="") {
     const novo_curso = criar_novo_curso(nome_curso.value);
-    caixa_cursos.insertBefore(novo_curso, curso_selecionado.nextSibling);
+    caixa_cursos.insertBefore(novo_curso, CursoSelecionado().nextSibling);
   } else {
     alert("Selecione um Curso");
+  }} catch{
+    alert('Digite um curso, por gentilza')
   }
 });
 
