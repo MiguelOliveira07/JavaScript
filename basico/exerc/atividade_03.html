@@ -1,14 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora_JS</title>
+    <link rel="stylesheet" href="atividade_03.css">
 </head>
 
 <body>
-    <div id="countainer"></div>
+    <div id="countainer">
+        <div id="numero_1" class="caixa tipo1">
+            <label for="num1">Insira o 1º número: </label>
+            <input type="text" id="num1" class="num">
+        </div>
+        <div id="numero_2" class="caixa tipo1">
+            <label for="num3">Insira o 2º número: </label>
+            <input type="text" id="num3" class="num">
+        </div>
+
+        <div id="resultado" class="caixa tipo1">
+            <p></p>
+        </div>
+        <div id="operadores" class="caixa tipo2">
+            <span id="+" class="operador">+</span>
+            <span id="-" class="operador">-</span>
+            <span id="/" class="operador">/</span>
+            <span id="*" class="operador">*</span>
+        </div>
+    </div>
 </body>
 
 </html>
