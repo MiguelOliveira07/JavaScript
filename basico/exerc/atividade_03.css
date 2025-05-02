@@ -4,7 +4,50 @@ body {
     box-sizing: border-box;
 }
 
+#countainer {
+    height: 50vh;
+    display: grid;
+    place-items: center;
+}
+
 .caixa {
     height: 50px;
     width: 150px;
+    width: 500px;
+    font-size: 2rem;
+    margin: 5px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    & input {
+        margin: 5px;
+        height: 30px;
+    }
+}
+
+#resultado {
+    margin: 5px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & input {
+        height: 40px;
+        width: 50%;
+    }
+}
+
+.operador {
+    width: 80px;
+    height: 60px;
+    margin: 5px;
+}
+
+.tipo2 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
 }
