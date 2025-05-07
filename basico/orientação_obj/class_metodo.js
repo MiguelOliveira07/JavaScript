@@ -1,10 +1,17 @@
 const Pessoa={
-    nome:'Miguel',
+    nome,
+    idade,
     getNome: function(){
         return this.nome
     },
+    getIdade: function(){
+        return this.idade
+    },
     setNome: function(nome){
         return this.nome=nome
+    },
+    setIdade: function(idade){
+        return this.idade=idade
     }
 }
 
