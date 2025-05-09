@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classe</title>
+    <link rel="stylesheet" href="atividade_classe.css">
+</head>
+
+<body>
+    <section class="formulario">
+        <form>
+            <div class="caixa">
+                <label class="texto" for="nome">Nome</label>
+                <input type="text" id="nome" autocomplete="off" placeholder="Digite o nome" required>
+            </div>
+            <div class="caixa">
+                <label class="texto" for="portas">Portas</label>
+                <input type="number" id="portas" autocomplete="off" placeholder="Número de portas" required>
+            </div>
+            <div class="caixa">
+                <label class="texto" for="blindagem">Blindagem</label>
+                <input type="number" id="blindagem" autocomplete="off" placeholder="Nível de blindagem">
+            </div>
+            <div class="caixa">
+                <label class="texto" for="municao">Munição</label>
+                <input type="number" id="municao" autocomplete="off" placeholder="Tipo de munição">
+            </div>
+            <div class="caixa tipo-veiculo">
+                <h3>Tipo de veículo</h3>
+                <div id="labels">
+                    <label>
+                        <input type="radio" name="tipo" value="militar" id="escolha_militar"> Militar
+                    </label>
+                    <label>
+                        <input type="radio" name="tipo" value="utilitario" id="escolha_utilitario"> Utilitário
+                    </label>
+                </div>
+            </div>
+            <div class="caixa">
+                <button type="submit" id="btn_adc">Adicionar</button>
+            </div>
+        </form>
+        <div id="carros">
+
+        </div>
+    </section>
+    <script src="atividade_classe.js"></script>
+</body>
+
+</html>
