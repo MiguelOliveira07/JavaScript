@@ -13,40 +13,62 @@ body{
 
 #countainer{
     background-color: rgb(151, 168, 187);
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
-
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    
     & .div_nome{
-        background-color: bisque;
-        padding: 10px;
+        width: 100%;
         align-items: center;
-    & #p_nome{
+        
+        & #p_nome{
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 1.3rem
         }
     }
-    & .div_display{
-        background-color: aqua;
-    }
     & #p_display{
-        
-        background-color:blueviolet ;
+        font-size: 2rem;
+        width: 550px;
+        height: 70px;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        background-color:rgba(255, 255, 255, 0.37) ;
+        justify-content: right;
+        padding: 10px;
     }
-
+    
     & .div_teclas{
         padding: 10px;
-        width: 500px;
-        background-color: beige;
+        width: 600px;
         display: grid;
         grid-template-columns:repeat(4,1fr);
         row-gap: 10px;
         column-gap: 10px;
     }
-
+    
     & .tecla{
-        width: 100%;
-        height: 60px;
-        font-size: 2rem;
+        width: 100% !important;
+        height: 75px !important;
+        font-size: 2rem !important;
+        border: 1px solid rgba(0, 0, 0, 0.5) !important;
+        border-radius: 5px !important;
+        transition: .2s !important;
+        
+    }
+    & .tecla:hover{
+        background-color: rgba(173, 173, 173, 0.788) !important; 
+        border: 1px solid rgb(3, 65, 3)!important;
+    }
+    
+    & .tecla_op{
+        background-color: rgb(127, 187, 255);
+    }
+    & .off{
+        background-color: rgb(253, 90, 90);
+    }
+    & .on{
+        background-color: rgb(94, 255, 94);
     }
 
 }

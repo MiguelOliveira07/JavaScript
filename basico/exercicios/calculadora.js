@@ -1,0 +1,54 @@
+const teclas_num = [...document.querySelectorAll(".num")];
+const teclas_op = [...document.querySelectorAll(".tecla_op")];
+const resultado = document.querySelector(".rest");
+const on_off = document.querySelector("#t_ligar_desligar");
+const limpar = document.querySelector("#t_limpar");
+
+const display = document.querySelector("#p_display");
+
+console.log(resultado);
+
+let sinal = false;
+let decimal = false;
+
+teclas_num.forEach((el) => {
+  el.addEventListener("click", (evt) => {
+    sinal = false;
+    if (evt.target.innerHTML == ",") {
+      if (!decimal) {
+        decimal = true;
+        if (display.innerHTML == "0") {
+          display.innerHTML = "0,";
+        } else {
+          display.innerHTML += evt.target.innerHTML;
+        }
+      }
+    } else {
+      if (display.innerHTML == "0") {
+        display.innerHTML = "";
+      }
+      display.innerHTML += evt.target.innerHTML;
+    }
+  });
+});
+teclas_op.forEach((el) => {
+  el.addEventListener("click", (evt) => {
+    if (!sinal) {
+      sinal = true;
+      if (display.innerHTML == "0") {
+        display.innerHTML = "";
+      }
+      if (evt.target.innerHTML == "X") {
+        display.innerHTML += "*";
+      } else {
+        display.innerHTML += evt.target.innerHTML;
+      }
+    }
+  });
+});
+
+limpar.addEventListener("click", (evt) => {
+  display.innerHTML = "0";
+  sinal = false;
+  decimal = false;
+});
