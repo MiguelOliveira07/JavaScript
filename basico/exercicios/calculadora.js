@@ -8,7 +8,7 @@ const display = document.querySelector("#p_display");
 
 console.log(resultado);
 
-let sinal = true;
+let sinal = false;
 let decimal = false;
 
 teclas_num.forEach((el) => {
