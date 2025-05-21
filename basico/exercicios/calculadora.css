@@ -30,7 +30,7 @@ body{
     & #p_display{
         font-size: 2rem;
         width: 550px;
-        height: 70px;
+        height: 60px;
         border-radius: 5px;
         border: 1px solid rgba(0, 0, 0, 0.5);
         background-color:rgba(255, 255, 255, 0.37) ;
@@ -40,7 +40,7 @@ body{
     
     & .div_teclas{
         padding: 10px;
-        width: 600px;
+        width: 500px;
         display: grid;
         grid-template-columns:repeat(4,1fr);
         row-gap: 10px;
@@ -49,7 +49,7 @@ body{
     
     & .tecla{
         width: 100% !important;
-        height: 75px !important;
+        height: 55px !important;
         font-size: 2rem !important;
         border: 1px solid rgba(0, 0, 0, 0.5) !important;
         border-radius: 5px !important;
@@ -64,11 +64,8 @@ body{
     & .tecla_op{
         background-color: rgb(127, 187, 255);
     }
-    & .off{
+    & .copy{
         background-color: rgb(253, 90, 90);
-    }
-    & .on{
-        background-color: rgb(94, 255, 94);
     }
 
 }
