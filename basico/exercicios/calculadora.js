@@ -4,6 +4,8 @@ const resultado = document.querySelector(".rest");
 const t_copy = document.querySelector("#t_copy");
 const limpar = document.querySelector("#t_limpar");
 const teste = document.getElementById("teste");
+const aba = document.querySelector(".calc_aba");
+const calc = document.querySelector(".calc");
 
 const display = document.querySelector("#p_display");
 
@@ -59,4 +61,8 @@ t_copy.addEventListener("click", (evt) => {
   // teste.select();
   // teste.setSelectionRange;(0,99999)
   // navigator.clipboard.writeText(teste.value);
+});
+
+aba.addEventListener("click", (evt) => {
+  calc.classList.toggle("calc_exibir");
 });

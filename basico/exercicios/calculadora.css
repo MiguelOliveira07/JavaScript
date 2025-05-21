@@ -1,70 +1,98 @@
 @charset "UTF-8";
 
-*{
+* {
     display: grid;
-    place-items: center;
-    align-content: center;
     height: 100%;
+    align-items: center;
 }
 
-body{
+body {
     background-color: rgba(248, 252, 255, 0.932);
 }
 
-#countainer{
+.calc {
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: -394px;
+    transition: .3s;
+}
+
+.calc_exibir {
+    left: 100px !important;
+    transition: .2s;
+}
+
+.calc_aba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 60px;
+    background-color: rgb(145, 153, 153);
+    border-radius: 0px 8px 5px 0px;
+}
+
+.calc_principal {
+    height: 90vh;
     background-color: rgb(151, 168, 187);
     padding: 10px;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-    
-    & .div_nome{
+
+
+    & .div_nome {
         width: 100%;
         align-items: center;
-        
-        & #p_nome{
+
+        & #p_nome {
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 1.3rem
         }
     }
-    & #p_display{
+
+    & #p_display {
         font-size: 2rem;
-        width: 550px;
+        width: 350px;
         height: 60px;
         border-radius: 5px;
         border: 1px solid rgba(0, 0, 0, 0.5);
-        background-color:rgba(255, 255, 255, 0.37) ;
+        background-color: rgba(255, 255, 255, 0.37);
         justify-content: right;
         padding: 10px;
     }
-    
-    & .div_teclas{
+
+    & .div_teclas {
         padding: 10px;
-        width: 500px;
+        width: 350px;
         display: grid;
-        grid-template-columns:repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
         row-gap: 10px;
         column-gap: 10px;
     }
-    
-    & .tecla{
+
+    & .tecla {
         width: 100% !important;
         height: 55px !important;
         font-size: 2rem !important;
         border: 1px solid rgba(0, 0, 0, 0.5) !important;
         border-radius: 5px !important;
         transition: .2s !important;
-        
+
     }
-    & .tecla:hover{
-        background-color: rgba(173, 173, 173, 0.788) !important; 
-        border: 1px solid rgb(3, 65, 3)!important;
+
+    & .tecla:hover {
+        background-color: rgba(173, 173, 173, 0.788) !important;
+        border: 1px solid rgb(3, 65, 3) !important;
     }
-    
-    & .tecla_op{
+
+    & .tecla_op {
         background-color: rgb(127, 187, 255);
     }
-    & .copy{
+
+    & .copy {
         background-color: rgb(253, 90, 90);
     }
 
