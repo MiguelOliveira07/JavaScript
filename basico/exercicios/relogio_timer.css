@@ -1,0 +1,62 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    margin: 0;
+}
+
+#data {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.relogio {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #00ffcc;
+}
+
+.def_alarme {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+input[type="number"] {
+    padding: 8px 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.comandos {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #00ffcc;
+    color: #111;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00ccaa;
+}
