@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class e bolhinas</title>
+    <link rel="stylesheet" href="tarefa_bolhas_class.css">
+</head>
+<body>
+    <div class="container">
+        <div id="menu" class="controle">
+            <label for="">Numero de objetos</label>
+            <p id="num_objetos">0</p>
+        </div>
+        <div id="objetos" class="controle">
+            <label for="quant_obj">Quantidade de objetos:</label>
+            <input type="number" id="quant_obj" min="0" max="200" value="0">
+            <button id="btn_add">Adicionar</button>
+        </div>
+        <div id="remover_objetos" class="controle">
+            <button id="remover_objs">Remover os objetos</button>
+        </div>
+    </div>
+    <div id="palco" class="palco"></div>
+    <script src="tarefa_bolhas_class.js"></script>
+</body>
+</html>
