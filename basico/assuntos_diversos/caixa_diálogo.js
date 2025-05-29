@@ -17,7 +17,7 @@ btn_confirm.addEventListener('click', (evt) => {
 })
 
 btn_prompt.addEventListener('click', (evt) => {
-    const nome = prompt('digite seu nome:')
+    const nome = prompt('digite seu nome:', 'digite aqui')
 
     if(nome == null){
         console.log('Botão CANCELAR pressionado')
