@@ -1,14 +1,16 @@
 const url = document.querySelector('#url')
 const btn_url = document.querySelector('#btn_url')
 
-btn_url.addEventListener('click', (evt)=>{
+btn_url.addEventListener('click', (evt) => {
     // window.location.reload()
     // window.location.assign('https://chatgpt.com/')
     // window.history.forward()
-    console.log(window.history.length)
+    // console.log(window.history.length)
+    // console.log(url.value)
+    window.location = url.value
 })
 
-// Propriedade	
+// Propriedade
 // location.href	    URL completa da página atual (pode ser lida ou alterada para redirecionar).
 // location.protocol	Protocolo usado (http:, https:, etc).
 // location.host	    Hostname e porta (exemplo.com:3000).
@@ -35,13 +37,13 @@ btn_url.addEventListener('click', (evt)=>{
 // history.replaceState(state, title, url)	Substitui a entrada atual do histórico.
 
 // window.open(url, target, specs, replace);
-// Parâmetro	
+// Parâmetro
 // url	    URL a ser aberta.
 // target	Onde abrir (_blank, _self, _parent, _top).
 // specs	String com configurações da nova janela (largura, altura, scroll, etc.).
 // replace	Se true, substitui entrada no histórico.
 
 // Outros métodos úteis
-// Método	
+// Método
 // window.location.toString()	Retorna a URL atual como string (equivalente a location.href).
 // new URL(url)	                Cria um objeto URL com métodos úteis de parsing e manipulação.
