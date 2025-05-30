@@ -34,4 +34,5 @@ btn_imprimir.addEventListener('click', (evt) => {
     win.document.write('</html>')
 
     win.print()
+    win.close()
 })
