@@ -1,5 +1,6 @@
 const nome = new String("Miguel Oliveira")
 const nome2 = new String("Miguel Oliveira")
+const nome3 = new String("Miguel Oliveira")
 const canal_curso = new String("CFB Cursos")
 
 console.log(nome)
@@ -20,8 +21,17 @@ console.log(nome.replace('i', 'I'))
 
 console.log(nome.slice(0, 11))
 
+let number = 10
+console.log(typeof(number.toString()))
+
+console.log(nome3.toLocaleUpperCase())
+console.log(nome3.toLowerCase())
+
 let arr_nome = nome.split(' ')
 console.log(arr_nome)
+
+let part_nome = nome.substring(0,6)
+console.log(part_nome)
 
 // console.log(nome==nome2) // Não vai comparar as Strings da maneira correta
 console.log(nome.localeCompare(nome2)) // Faz a comparação do jeito certo
