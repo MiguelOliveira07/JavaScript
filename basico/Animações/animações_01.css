@@ -1,0 +1,44 @@
+/* estilos.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7fa;
+  font-family: Arial, sans-serif;
+}
+
+.painel {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 18px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #004d40;
+}
+
+.carro {
+  width: 100px;
+  height: 60px;
+  background-color: #ff5252;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px #333;
+  transition: left 0.2s ease;
+}
