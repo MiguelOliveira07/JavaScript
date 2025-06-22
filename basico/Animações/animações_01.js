@@ -16,22 +16,27 @@ const mover_carro = (dir) => {
 };
 
 parar.addEventListener("click", () => {
-  clearInterval(anima);
+  clearTimeout(anima)
+  // clearInterval(anima);
 });
 
 seta_esquerda.addEventListener("click", () => {
-  clearInterval(anima);
-  anima = setInterval(mover_carro, 20, -1);
+  clearTimeout(anima)
+  mover_carro(-1)
+  // clearInterval(anima);
+  // anima = setInterval(mover_carro, 20, -1);
   //   console.log(pos);
 });
 
 seta_direita.addEventListener("click", () => {
+  clearTimeout(anima)
+  mover_carro(1)
   //   let pos = parseInt(carro.style.left);
   //   pos += 50;
   //   carro.style = `position:absolute;left:${pos}px`;
   //   console.log(pos);
-  clearInterval(anima);
-  anima = setInterval(mover_carro, 20, +1);
+  // clearInterval(anima);
+  // anima = setInterval(mover_carro, 20, +1);
   //   console.log(pos);
 });
 
