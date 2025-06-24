@@ -28,6 +28,7 @@ const mover_carro = (dir) => {
   } else{
     clearTimeout(anima)
     console.log('limite atingido.')
+    console.log(tam_max)
   }
 };
 
