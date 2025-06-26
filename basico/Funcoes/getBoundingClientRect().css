@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.info {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #263238;
+  color: white;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  justify-content: center;
+}
+
+.info p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.quadrado {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  margin: 150px 20px; /* espaço pra não ficar atrás do header */
+  position: relative;
+}
