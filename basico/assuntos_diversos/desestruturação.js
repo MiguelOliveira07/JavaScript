@@ -20,4 +20,4 @@ console.log(a, b, c, d);
 console.log(e, f, g, h);
 console.log(i, j, k, l);
 console.log(m, n);
-console.log(o,p,q,r,s);
+console.log(o, p, q, r, s);
