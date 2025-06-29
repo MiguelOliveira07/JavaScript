@@ -1,0 +1,22 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    place-items: center;
+}
+
+title{
+    display: none;
+}
+body{
+    height: 100vh;
+
+}
+    
+.numero{
+    height: 200px;
+    width: 300px;
+    font-size: 2rem;
+    padding: 10px;
+    background-color: #7c777744;
+}
