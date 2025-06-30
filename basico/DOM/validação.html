@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação do DOM</title>
+    <link rel="stylesheet" href="validação.css">
+</head>
+
+<body>
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" minlength="4" maxlength="8" required>
+        <label for="nota">nota</label>
+        <input type="number" name="nota" id="nota" min="0" max="10" required>
+        <button type="button" id="btn_validar">Validar</button>
+        <p id="mensagem"></p>
+    </form>
+    <script src="validação.js"></script>
+</body>
+
+</html>
