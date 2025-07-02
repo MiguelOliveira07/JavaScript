@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#content {
+  white-space: pre-wrap;
+  margin-bottom: 10px;
+}
+
+#img {
+  max-width: 200px;
+  display: block;
+  margin-top: 10px;
+}
