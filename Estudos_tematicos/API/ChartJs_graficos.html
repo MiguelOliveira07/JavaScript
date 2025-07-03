@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart JS </title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div style="width:900px; height: 800px;">
+        <canvas id="grafico_1" ></canvas>
+    </div>
+
+    <script>
+  const ctx = document.getElementById('grafico_1');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Brasil', 'Alemanha', 'Grecia', 'Swtizerland', 'França', 'USA'],
+      datasets: [{
+        label: '# of Habitants (millions)',
+        data: [220, 83, 10.5, 8.8, 68.4, 342],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
