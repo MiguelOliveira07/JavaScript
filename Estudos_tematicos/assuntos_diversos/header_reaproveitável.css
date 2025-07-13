@@ -1,4 +1,11 @@
-body{
-    margin: 0px ;
+body {
+    margin: 0px;
     padding: 0px;
+}
+
+.message_box {
+    padding: 10px 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 5px;
 }
