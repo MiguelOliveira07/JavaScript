@@ -18,9 +18,9 @@ btn_parar.addEventListener('click', () => {
 });
 
 btn_parcial.addEventListener('click', () => {
-  let parcial = "<div>" + timer.innerHTML + "</div>";
-  box_parciais.innerHTML += parcial + "\n"; 
+  box_parciais.textContent += timer.innerHTML + "\n";
 });
+
 
 btn_zerar.addEventListener('click', () => {
   clearInterval(intervalo);

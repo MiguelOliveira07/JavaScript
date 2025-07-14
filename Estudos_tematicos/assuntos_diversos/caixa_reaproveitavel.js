@@ -1,13 +1,9 @@
-const config = {
-  titulo: "Teste",
-  texto: "Estudo de JAVASCRPIT",
-  cor: "#45b",
-};
+import { Caixa_reaproveitavel } from "./cxmensg.js";
 
-const Caixa = new Caixa_reaproveitavel(config);
+Caixa_reaproveitavel.config({ cor: "#45b" });
 
 const btn = document.getElementById("message_box");
 
 btn.addEventListener("click", () => {
-  Caixa.mostrar();
+  Caixa_reaproveitavel.mostrar("Este é o título personalizado", "Este é meu texto personalizado");
 });

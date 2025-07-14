@@ -1,17 +1,15 @@
 class Caixa_reaproveitavel {
-  titulo = null;
-  texto = null;
-  cor = null;
-  destino = null;
-  div = null;
-  constructor(config) {
-    this.titulo = config.titulo;
-    this.texto = config.texto;
+  static cor = '#888';
+  static destino = null;
+  static div = null;
+
+  static config(config) {
     this.cor = config.cor;
-    this.destino = document.body;
-    this.div = config.div;
   }
-  mostrar = () => {
+  static mostrar = (titulo, texto) => {
+    this.destino = document.body
+    this.titulo = titulo;
+    this.texto = texto;
     this.div = document.createElement("div")
     const estilo =
       "display:flex;" +
@@ -31,9 +29,9 @@ class Caixa_reaproveitavel {
       "display: flex;" +
       "justify-content: flex-start;" +
       "align-items: center;" +
-      "flex: column ;" +
+      "flex-direction: column ;" +
       "width: 300px;"
-    const area_message = document.createElement('pre')
+    const area_message = document.createElement('section')
     area_message.setAttribute('style', estilo_area)
     this.div.appendChild(area_message)
 
@@ -41,16 +39,69 @@ class Caixa_reaproveitavel {
       "display: flex;" +
       "justify-content: flex-start;" +
       "align-items: center;" +
-      "width: 50%;" +
+      "width: 100%;" +
       "background-color:" + this.cor + ";" +
       "color: #fff;" +
       "padding: 5px;" +
+      "margin: 0px;" +
       "border-radius: 5px 5px 0px 0px;"
 
-    const area_titulo = document.createElement('pre')
+    const area_titulo = document.createElement('header')
     area_titulo.setAttribute('style', estilo_titulo)
     area_titulo.innerHTML = this.titulo
     area_message.appendChild(area_titulo)
+
+    const estilo_corpo =
+      "display: flex;" +
+      "justify-content: flex-start;" +
+      "align-items: center;" +
+      "width: 100%;" +
+      "background-color: #eee;" +
+      "color: #000;" +
+      "margin: 0px;" +
+      "padding: 45px 5px;"
+
+    const area_corpo = document.createElement('p')
+    area_corpo.setAttribute('style', estilo_corpo)
+    area_corpo.innerHTML = this.texto
+    area_message.appendChild(area_corpo)
+
+    const estilo_footer =
+      "display: flex;" +
+      "justify-content: center;" +
+      "align-items: center;" +
+      "width: 100%;" +
+      "background-color: #8FC1B5;" +
+      "color: #000;" +
+      "margin: 0px;" +
+      "padding: 5px 5px;" +
+      "border-radius: 0px 0px 5px 5px;"
+
+    const area_footer = document.createElement('footer')
+    area_footer.setAttribute('style', estilo_footer)
+    area_message.appendChild(area_footer)
+
+    const estilo_btn =
+      "text-trasnform: uppercase;" +
+      "cursor: pointer;" +
+      "background-color:" + this.cor + ";" +
+      "color: #fff;" +
+      "text-aling: center;" +
+      "padding: 10px 50px;" +
+      "border:none;" +
+      "border-radius: 5px;"
+    const btn_ok = document.createElement('button')
+    btn_ok.setAttribute('style', estilo_btn)
+    btn_ok.innerHTML = 'OK'
+    btn_ok.addEventListener('click', (evt) => {
+      this.ocultar()
+    })
+    area_footer.appendChild(btn_ok)
+
   }
-  ocultar = () => { };
+  static ocultar = () => {
+    this.div.remove()
+  };
 }
+
+export {Caixa_reaproveitavel}
