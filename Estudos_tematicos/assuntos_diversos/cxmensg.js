@@ -2,11 +2,16 @@ class Caixa_reaproveitavel {
   static cor = '#888';
   static destino = null;
   static div = null;
+  static tipo = null;
+  static comando_sn = null;
+  static textos = null;
 
-  static config(config) {
-    this.cor = config.cor;
-  }
-  static mostrar = (titulo, texto) => {
+
+  static mostrar = (config, titulo, texto) => {
+    this.cor = config.cor
+    this.tipo = config.tipo
+    this.comando_sn = () => {config.comando_sn()}
+    this.textos = config.textos
     this.destino = document.body
     this.titulo = titulo;
     this.texto = texto;
@@ -89,14 +94,34 @@ class Caixa_reaproveitavel {
       "text-aling: center;" +
       "padding: 10px 50px;" +
       "border:none;" +
+      "margin-left: 10px;" +
       "border-radius: 5px;"
-    const btn_ok = document.createElement('button')
-    btn_ok.setAttribute('style', estilo_btn)
-    btn_ok.innerHTML = 'OK'
-    btn_ok.addEventListener('click', (evt) => {
-      this.ocultar()
-    })
-    area_footer.appendChild(btn_ok)
+    if (this.tipo == "ok") {
+      const btn_ok = document.createElement('button')
+      btn_ok.setAttribute('style', estilo_btn)
+      btn_ok.innerHTML = 'OK'
+      btn_ok.addEventListener('click', (evt) => {
+        this.ocultar()
+      })
+      area_footer.appendChild(btn_ok)
+    } else if (this.tipo == "sn") {
+      const btn_os = document.createElement('button')
+      btn_os.setAttribute('style', estilo_btn)
+      btn_os.innerHTML = this.textos[0]
+      btn_os.addEventListener('click', (evt) => {
+        this.comando_sn()
+        this.ocultar()
+      })
+      area_footer.appendChild(btn_os)
+
+      const btn_on = document.createElement('button')
+      btn_on.setAttribute('style', estilo_btn)
+      btn_on.innerHTML = this.textos[1]
+      btn_on.addEventListener('click', (evt) => {
+        this.ocultar()
+      })
+      area_footer.appendChild(btn_on)
+    }
 
   }
   static ocultar = () => {
@@ -104,4 +129,4 @@ class Caixa_reaproveitavel {
   };
 }
 
-export {Caixa_reaproveitavel}
+export { Caixa_reaproveitavel }
