@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "chart.js": "^4.5.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "Estudos e projetos da linguagem JavaScript 2025",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiguelOliveira07/JavaScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiguelOliveira07/JavaScript/issues"
+  },
+  "homepage": "https://github.com/MiguelOliveira07/JavaScript#readme",
+  "type": "module"
+}
