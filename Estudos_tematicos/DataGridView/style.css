@@ -1,0 +1,57 @@
+*{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.dgv{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.titulos{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    background-color: #138;
+    color: #fff;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.titulos div, .dgv_Linha div{
+     padding: 5px;
+}
+
+.dgv_Dados{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.dgv_Linha{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.c1{
+    width: 50px;
+}
+.c2{
+    width: 150px;
+}
+.c3{
+    width: 150px;
+}
+.c4{
+    width: 150px;
+}
+.c5{
+    width: 150px;
+}
