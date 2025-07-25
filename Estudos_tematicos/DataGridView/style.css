@@ -1,18 +1,18 @@
-*{
+* {
     border: none;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
-.dgv{
+.dgv {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
 }
 
-.titulos{
+.titulos {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -22,36 +22,55 @@
     border-radius: 5px 5px 0px 0px;
 }
 
-.titulos div, .dgv_Linha div{
-     padding: 5px;
+.titulos div,
+.dgv_Linha div {
+    padding: 5px;
 }
 
-.dgv_Dados{
+.dgv_Dados {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
 }
 
-.dgv_Linha{
+.dgv_Linha {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: row;
+
 }
 
-.c1{
+.dgv_Linha:nth-child(odd) {
+    background-color: #aaa;
+}
+
+.dgv_Linha:nth-child(even) {
+    background-color: #ddd;
+}
+
+.dgv_Linha:hover{
+    background-color: #088 !important;
+    cursor: pointer;
+}
+
+.c1 {
     width: 50px;
 }
-.c2{
+
+.c2 {
     width: 150px;
 }
-.c3{
+
+.c3 {
     width: 150px;
 }
-.c4{
+
+.c4 {
     width: 150px;
 }
-.c5{
+
+.c5 {
     width: 150px;
 }
