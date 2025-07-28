@@ -39,7 +39,6 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: row;
-
 }
 
 .dgv_Linha:nth-child(odd) {
@@ -53,6 +52,12 @@
 .dgv_Linha:hover{
     background-color: #088 !important;
     cursor: pointer;
+}
+
+.coluna{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .c1 {
@@ -73,4 +78,13 @@
 
 .c5 {
     width: 150px;
+    justify-content: space-evenly !important;
+    align-items: center;
+}
+
+.dgv_icon {
+    width: 25px;
+    padding-left: 5px;
+    filter: brightness(0) saturate(100%);
+
 }
