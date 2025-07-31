@@ -1,0 +1,22 @@
+| Símbolo | Significado                      | Exemplo                  |         |             |
+| ------- | -------------------------------- | ------------------------ | ------- | ----------- |
+| `.`     | Qualquer caractere (exceto \n)   | `/c.t/` → cat, cut...    |         |             |
+| `\d`    | Qualquer dígito (0–9)            | `/\d/` → 5, 3...         |         |             |
+| `\w`    | Letra, número ou "\_"            | `/\w/` → a, 5, \_        |         |             |
+| `\s`    | Espaço em branco                 | `/\s/` → espaço, tab     |         |             |
+| `^`     | Início da string                 | `/^oi/` → "oi tudo..."   |         |             |
+| `$`     | Fim da string                    | `/fim$/`                 |         |             |
+| `*`     | 0 ou mais ocorrências            | `/a*/`                   |         |             |
+| `+`     | 1 ou mais ocorrências            | `/a+/`                   |         |             |
+| `?`     | 0 ou 1 ocorrência                | `/a?/`                   |         |             |
+| `{n}`   | Exatamente n repetições          | `/\d{2}/` → dois dígitos |         |             |
+| `[abc]` | Um dos caracteres dentro do `[]` | `/[aeiou]/`              |         |             |
+| `( )`   | Agrupamento                      | `/(abc)+/`               |         |             |
+| \`      | \`                               | OU lógico                | \`/azul | vermelho/\` |
+
+
+Exemplo:
+const email = "exemplo@gmail.com";
+const regex = /^[\w.-]+@[\w.-]+\.\w+$/;
+
+console.log(regex.test(email)); // true
