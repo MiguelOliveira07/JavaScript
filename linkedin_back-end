@@ -1,0 +1,118 @@
+
+##  Primeiros Passos no Back-End com Node.js
+
+### 🔹 O que é Node.js?
+
+Node.js é uma ferramenta que permite rodar **JavaScript fora do navegador**, ou seja, no **servidor**.
+Com ele, dá pra criar APIs, servidores, automações e até apps completos só com JS.
+
+ Resumindo: é o que permite a gente usar JavaScript no **back-end**, não só no front.
+
+---
+
+### 🔹 Para que serve o Node?
+
+* Criar **servidores web**
+* Fazer **APIs** (para enviar e receber dados)
+* Trabalhar com **bancos de dados**
+* Criar sistemas em tempo real, tipo chats
+* Automatizar tarefas
+
+Se você quer construir a parte do sistema que **não aparece na tela**, Node.js é um ótimo começo!
+
+---
+
+## 📦 Começando com `npm`
+
+O `npm` (Node Package Manager) é tipo uma **loja de ferramentas** para projetos em Node.
+Com ele, você instala pacotes (bibliotecas) que ajudam a resolver problemas sem ter que programar tudo do zero.
+
+Exemplo:
+
+```bash
+npm install express
+```
+
+Isso instala o **Express**, que a gente já vai ver.
+
+---
+
+## 🛠️ Módulos Nativos do Node.js
+
+O Node já vem com alguns "kits de ferramentas" prontos, que são os **módulos nativos**:
+
+* `http`: pra criar um servidor simples
+* `fs`: pra ler e escrever arquivos
+* `path`: pra mexer com caminhos de arquivos
+* `os`: pra pegar informações do sistema
+
+Esses módulos ajudam a fazer muita coisa sem depender de pacotes externos.
+
+---
+
+## ⚙️ Frameworks do Node.js
+
+Frameworks são ferramentas que deixam o trabalho mais rápido e organizado.
+Os 3 principais do Node são:
+
+### 1. **Express.js**
+
+O mais famoso! Com ele, dá pra criar rotas, lidar com requisições (GET, POST...), enviar respostas e montar APIs rapidinho.
+
+### 2. **NestJS**
+
+Mais robusto e organizado, já usa TypeScript e é ótimo pra projetos grandes. Ele segue um padrão mais "enterprise".
+
+### 3. **Fastify**
+
+Mais leve e rápido que o Express. Ideal pra quem quer performance sem perder a simplicidade.
+
+---
+
+## 🔌 O que é uma API?
+
+API é tipo uma **ponte** entre o front-end (o que o usuário vê) e o back-end (onde os dados vivem).
+
+Exemplo prático: quando você preenche um formulário e clica em “Enviar”, o front faz uma **requisição** pra uma API, que salva ou busca algo no banco e responde.
+
+### Métodos mais usados:
+
+| Método | Pra quê serve?             | Exemplo de rota |
+| ------ | -------------------------- | --------------- |
+| GET    | Buscar dados               | `/usuarios`     |
+| POST   | Criar novos dados          | `/usuarios`     |
+| PUT    | Atualizar dados existentes | `/usuarios/:id` |
+| DELETE | Deletar dados              | `/usuarios/:id` |
+
+---
+
+## 🧾 E o tal do JSON?
+
+JSON (JavaScript Object Notation) é o **formato padrão** pra trocar dados entre o front e o back.
+É leve, fácil de ler e funciona em praticamente qualquer linguagem.
+
+Exemplo:
+
+```json
+{
+  "nome": "João",
+  "idade": 20,
+  "email": "joao@email.com"
+}
+```
+
+Quando você manda ou recebe dados de uma API, quase sempre é em JSON.
+
+---
+
+##  Resumindo tudo:
+
+ Tópico        Pra que serve?                                             
+ ------------  ---------------------------------------------------------- 
+ Node.js       Usar JavaScript no back-end                                
+ npm           Instalar bibliotecas (pacotes)                             
+ Módulos       Ferramentas prontas pra resolver problemas comuns          
+ Express       Criar APIs e rotas de forma simples                        
+ API           Comunicação entre front e back                             
+ Métodos HTTP  Enviar (POST), buscar (GET), editar (PUT), apagar (DELETE) 
+ JSON          Formato padrão pra mandar e receber dados                  
