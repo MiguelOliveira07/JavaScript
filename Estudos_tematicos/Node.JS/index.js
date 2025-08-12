@@ -4,7 +4,7 @@ const server = express() // A variável server está recebendo a dunção expres
 // localhost
 // 3000
 
-server.get("/hello", (req, res) =>{
+server.get("/hello/:id", (req, res) =>{
     return res.json(
         { 
             title: "Hello World",
