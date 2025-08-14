@@ -4,11 +4,28 @@ const server = express() // A variável server está recebendo a dunção expres
 // localhost
 // 3000
 
-server.get("/hello/:id", (req, res) =>{
+// Query params = nome?Miguel&idade=18
+
+// Route params =  /hello/:nome
+
+server.get("/hello", (req, res) =>{
+    const {nome, idade} = req.query
     return res.json(
         { 
             title: "Hello World",
-            message: "Olá comapanheiro, vai uma picanha?"
+            message: `Olá ${nome}, vai uma picanha?`,
+            idade: idade
+        }
+    )
+})
+
+//Rota diferente da anterior
+server.get("/hello/:nome", (req, res)=>{
+    const nome = req.params.nome
+    return res.json(
+        { 
+            title: "Hello World",
+            message: `Olá ${nome}, vai uma picanha?`,
         }
     )
 })
