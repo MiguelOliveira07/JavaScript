@@ -8,6 +8,10 @@ const server = express() // A variável server está recebendo a dunção expres
 
 // Route params =  /hello/:nome
 
+server.get("/", (req, res) =>{
+    res.send("hello")
+})
+
 server.get("/hello", (req, res) =>{
     const {nome, idade} = req.query
     return res.json(
@@ -25,7 +29,7 @@ server.get("/hello/:nome", (req, res)=>{
     return res.json(
         { 
             title: "Hello World",
-            message: `Olá ${nome}, vai uma picanha?`,
+            message: `Olá ${nome}, vai uma picanha? Tá no precinho`,
         }
     )
 })
