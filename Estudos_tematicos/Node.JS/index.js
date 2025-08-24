@@ -1,12 +1,7 @@
-const express = require("express") // busca meu modulo express no node_modules, que cria o express (ficará alocado na variavel)
-const server = express() // A variável server está recebendo a dunção express, que vem do modulo express() (Cria uma cópia interira do express dentro desse sever)
-// 127.0.0.1
-// localhost
-// 3000
-
-// Query params = nome?Miguel&idade=18
-
-// Route params =  /hello/:nome
+// busca meu modulo express no node_modules, que cria o express (ficará alocado na variavel)
+const express = require("express") 
+// A variável server está recebendo a dunção express, que vem do modulo express() (Cria uma cópia interira do express dentro desse sever)
+const server = express() 
 
 server.get("/", (req, res) =>{
     res.send("hello")
@@ -17,13 +12,12 @@ server.get("/hello", (req, res) =>{
     return res.json(
         { 
             title: "Hello World",
-            message: `Olá ${nome}, vai uma picanha?`,
+            message: `Olá ${nome}, qual o Hello World do Back-end?`,
             idade: idade
         }
     )
 })
 
-//Rota diferente da anterior
 server.get("/hello/:nome", (req, res)=>{
     const nome = req.params.nome
     return res.json(
@@ -35,7 +29,3 @@ server.get("/hello/:nome", (req, res)=>{
 })
 
 server.listen(3000)
-//3000
-// 5000
-// 8000
-// 8080
