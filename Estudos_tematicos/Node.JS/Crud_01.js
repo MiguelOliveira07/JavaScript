@@ -18,8 +18,8 @@ server.get("/customers/:id", (req, res) => {
     const status = customer ? 200 : 404
 
     console.debug("GET :: /customers/:id", customer)
+    
     // console.debug("GET :: /customers/:id", JSON.stringify(customer))
-
     return res.status(status).json(customer)
 })
 
