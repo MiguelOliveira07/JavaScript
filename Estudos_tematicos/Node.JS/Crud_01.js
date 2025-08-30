@@ -16,6 +16,10 @@ server.get("/customers/:id", (req, res) => {
     const id = parseInt(req.params.id)
     const customer = customers.find(item => item.id === id)
     const status = customer ? 200 : 404
+
+    console.debug("GET :: /customers/:id", customer)
+    
+    // console.debug("GET :: /customers/:id", JSON.stringify(customer))
     return res.status(status).json(customer)
 })
 
