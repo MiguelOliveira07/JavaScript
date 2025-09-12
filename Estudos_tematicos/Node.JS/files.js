@@ -23,7 +23,7 @@ fs.writeFile(path.join(__dirname, 'reply.txt'), 'Hello World!', (err) => {
 
         fs.rename(path.join(__dirname, 'reply.txt'),path.join(__dirname, 'NewReply.txt'), (err) => {
             if (err) throw err;
-            console.log('Rename complete!')
+            console.log('Rename complete!!')
 
 
         })
