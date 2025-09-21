@@ -14,6 +14,7 @@ const fileOps = async ()=>{
     }
     catch(err){
         console.log(err)
+        console.log(data)
     }
 }
 
