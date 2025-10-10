@@ -1,4 +1,4 @@
 (async () => {
-    const db = require('./db')
+    const DB = require('./db')
 
 })
