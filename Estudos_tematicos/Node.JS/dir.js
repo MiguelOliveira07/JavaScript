@@ -2,7 +2,7 @@ const fs = require('fs')
 
 if (!fs.existsSync('./new')) {
 
-    fs.mkdir('./new', (err) => {
+    fs.mkdir('./novo', (err) => {
         if (err) throw err;
         console.log('Directory created')
     })
