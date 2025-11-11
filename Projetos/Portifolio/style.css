@@ -1,0 +1,91 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    display: flex;
+    background-color: azure;
+    height: 15%;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    & h1{
+        margin-left: 4%;  
+        /* color: ; */
+        /* font-family: ;       */
+    }
+
+    & #menu{
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 15px;
+        list-style: none;
+        margin-right: 5%;
+
+        & li{
+            /* background-color:; */
+            /* color: ; */
+            /* font-family: ; */
+            font-size: large;
+        }
+    }
+}
+
+main{
+    height:85%;
+    background-color: azure;
+    align-content: center;
+
+    & section{
+        display: flex;
+        flex-flow: row nowrap;
+        height: 80%;
+        margin: 40px;
+        background-color: blue;
+        justify-content: space-between;
+        padding: 0px 0px 0px 10px;
+
+        & #foto{
+            background-color: aquamarine;
+            margin: 10px;
+            width: 40%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+
+        }
+
+        & #caixa-texto{
+            background-color: aliceblue;
+            margin: 10px;
+            width: 60%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+
+            & p{
+            /*  */
+            }
+
+            & footer{
+
+
+                & .links{
+
+                }
+                & #button-contato{
+
+                }
+            }
+        }
+    }
+
+}
