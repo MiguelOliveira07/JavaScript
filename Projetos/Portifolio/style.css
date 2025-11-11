@@ -1,91 +1,89 @@
-*{
-    padding:0px;
+* {
     margin: 0px;
+    padding: 0px;
 }
 
-body{
+body {
     height: 100vh;
     width: 100vw;
 }
 
-header{
-    display: flex;
-    background-color: azure;
-    height: 15%;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+header {
     align-items: center;
+    /* background-color: azure; */
+    display: flex;
+    flex-flow: row nowrap;
+    height: 15%;
+    justify-content: space-between;
 
-    & h1{
-        margin-left: 4%;  
+    & h1 {
+        margin-left: 4%;
         /* color: ; */
-        /* font-family: ;       */
+        /* font-family: ; */
     }
 
-    & #menu{
+    & #menu {
         display: flex;
         flex-flow: row nowrap;
         gap: 15px;
         list-style: none;
         margin-right: 5%;
 
-        & li{
+        & li {
             /* background-color:; */
             /* color: ; */
-            /* font-family: ; */
             font-size: large;
+            /* font-family: ; */
         }
     }
 }
 
-main{
-    height:85%;
-    background-color: azure;
+main {
     align-content: center;
+    /* background-color: azure; */
+    height: 85%;
 
-    & section{
+    & section {
+        /* background-color: blue; */
         display: flex;
         flex-flow: row nowrap;
         height: 80%;
-        margin: 40px;
-        background-color: blue;
         justify-content: space-between;
+        margin: 40px;
         padding: 0px 0px 0px 10px;
 
-        & #foto{
-            background-color: aquamarine;
+        & #foto {
+            align-items: center;
+            /* background-color: aquamarine; */
+            display: flex;
+            justify-content: center;
             margin: 10px;
             width: 40%;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-
         }
 
-        & #caixa-texto{
-            background-color: aliceblue;
-            margin: 10px;
-            width: 60%;
+        & #caixa-texto {
+            align-items: center;
+            /* background-color: aliceblue; */
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
-            align-items: center;
+            margin: 10px;
+            width: 60%;
 
-            & p{
-            /*  */
+            & p {
+                /*  */
             }
 
-            & footer{
+            & footer {
 
-
-                & .links{
+                & .links {
 
                 }
-                & #button-contato{
+
+                & #button-contato {
 
                 }
             }
         }
     }
-
 }
