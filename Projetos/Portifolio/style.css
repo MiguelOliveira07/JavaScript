@@ -63,7 +63,7 @@ main {
 
         & #caixa-texto {
             align-items: center;
-            /* background-color: aliceblue; */
+            /* background-color : aliceblue; */
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
