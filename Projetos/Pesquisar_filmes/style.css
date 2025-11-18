@@ -1,0 +1,86 @@
+:root {
+    --cor-neutra: #131720;
+    --branco: #ffffff;
+    --pesquisa: #151f30;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    background-color: var(--cor-neutra);
+    font-family: sans-serif;
+}
+
+
+.top {
+    background-color: var(--cor-neutra);
+    overflow: hidden;
+    padding: 10px;
+
+    & h1 {
+        float: left;
+        display: block;
+        color: var(--branco);
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    & #formulario {
+        float: right;
+    }
+
+    & form {
+        background-color: var(--pesquisa);
+        width: 300px;
+        height: 40px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+
+        & input {
+            all: unset;
+            font: 15px system-ui;
+            color: var(--branco);
+            height: 100px;
+            padding: 5px 10px;
+        }
+    }
+}
+
+main {
+    height: 100vh;
+
+    & .row {
+        height: 100vh;
+
+        & .column {
+            height: 100vh;
+            float: left;
+            width: 15%;
+            padding: 5px;
+
+            & .card {
+                height: 400px;
+                width: 280px;
+                border-radius: 10px;
+                padding: 10px 10px;
+                text-align: center;
+                background-color: var(--pesquisa);
+
+                & .thumnail {
+                    height: 350px;
+                    width: 250px;
+                    border-radius: 10px;
+                }
+
+                h3 {
+                    color: var(--branco);
+                }
+
+            }
+        }
+    }
+}
