@@ -1,8 +1,9 @@
-:root{
+:root {
     --branco: #F7F9F9;
     --sombra: #212227;
     --cinza: #637074d3;
-    --vidro:#fffbfee3;
+    --cinza-fosco: #d6e3e72f;
+    --vidro: #fffbfee3;
 
 
 }
@@ -40,10 +41,19 @@ header {
         margin-right: 5%;
 
         & li {
-            /* background-color:; */
-            /* color: ; */
+            align-content: center;
+            height: 20px;
+            padding: 10px;
+            margin: 10px 0px;
             font-size: large;
+            border-radius: 10px;
+            transition: 0.4s;
             /* font-family: ; */
+        }
+
+        & li:hover {
+            background-color: var(--sombra);
+            color: var(--branco);
         }
     }
 }
@@ -81,20 +91,55 @@ main {
             width: 60%;
 
             & p {
-                /*  */
+                padding: 30px;
+                margin: 5px;
+                word-spacing: 4px;
+                line-height: 1.5rem;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: var(--branco);
+                font: 100;
+                font-size: 18px;
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                border-radius: 10px;
+
             }
 
             & footer {
+                display: flex;
+                flex-flow: column wrap;
+                margin: 20px;
+                gap: 10px;
+                justify-content: center;
+                height: 300px;
+                width: 300px;
+
+                & .links {
+                    justify-content: center;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    gap: 10px;
+                    ;
+                }
 
                 & #button-contato {
-
+                    background-color: var(--branco);
+                    height: 50px;
+                    border-radius: 10px;
+                    border: none;
+                    font-size: 1.2rem;
+                    font-family: 'Times New Roman', Times, serif;
+                    transition: 0.6s;
+                }
+                
+                & #button-contato:hover{
+                    background-color: var(--vidro);
+                    border: 3px solid var(--cinza-fosco);
                 }
             }
         }
     }
-}
 
-.links a{
-    /* background-color: black; */
-    color: rgb(10, 27, 183) !important;
-}
+    .links a {
+        /* background-color: black; */
+        color: rgb(10, 27, 183) !important;
+    }
