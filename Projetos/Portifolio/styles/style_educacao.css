@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: black;
+    color: white;
+    align-items: center;
+}
+
+#menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menus {
+    list-style: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menus:hover {
+    color: #00aaff;
+}
+
+.educacao-section {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.titulo-pagina {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.bloco {
+    background: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #0002;
+}
+
+.subtitulo {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.item {
+    margin-bottom: 18px;
+}
+
+.item h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.item p {
+    margin: 5px 0;
+    color: #555;
+}
