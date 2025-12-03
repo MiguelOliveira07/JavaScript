@@ -19,44 +19,7 @@ body {
     background-color: var(--sombra);
 }
 
-header {
-    align-items: center;
-    background-color: var(--vidro);
-    display: flex;
-    flex-flow: row nowrap;
-    height: 100px;
-    justify-content: space-between;
 
-    & h1 {
-        margin-left: 4%;
-        /* color: ; */
-        /* font-family: ; */
-    }
-
-    & #menu {
-        display: flex;
-        flex-flow: row nowrap;
-        gap: 15px;
-        list-style: none;
-        margin-right: 5%;
-
-        & li {
-            align-content: center;
-            height: 20px;
-            padding: 10px;
-            margin: 10px 0px;
-            font-size: large;
-            border-radius: 10px;
-            transition: 0.4s;
-            /* font-family: ; */
-        }
-
-        & li:hover {
-            background-color: var(--sombra);
-            color: var(--branco);
-        }
-    }
-}
 
 main {
     align-content: center;
@@ -138,6 +101,7 @@ main {
             }
         }
     }
+}
 
     .links a {
         /* background-color: black; */

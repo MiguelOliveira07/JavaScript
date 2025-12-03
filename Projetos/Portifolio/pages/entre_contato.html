@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acionar</title>
+    <link rel="stylesheet" href="/styles/style_contato.css">
+</head>
+
+<body>
+
+      <!-- <header>
+        <h1>Miguel Oliveira</h1>
+        <div id="menu">
+            <li class="menus" id="home">Home</li>
+            <li class="menus" id="serviços">Serviços</li>
+            <li class="menus" id="educação">Educação</li>
+            <li class="menus" id="contato">Contato</li>
+        </div>
+    </header> -->
+
+
+    <section class="contato-section">
+
+        <h2 class="titulo">Entre em Contato</h2>
+        <p class="descricao">
+            Me envie uma mensagem! Seja para trabalho, dúvidas, sugestões ou parcerias.
+        </p>
+
+        <div class="form-container">
+
+            <form action="https://formsubmit.co/SEU_EMAIL_AQUI" method="POST">
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_subject" value="Novo contato pelo portfólio!">
+
+                <label>Seu Nome</label>
+                <input type="text" name="nome" placeholder="Digite seu nome" required>
+
+                <label>Seu Email</label>
+                <input type="email" name="email" placeholder="exemplo@email.com" required>
+
+                <label>Mensagem</label>
+                <textarea name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+
+                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
