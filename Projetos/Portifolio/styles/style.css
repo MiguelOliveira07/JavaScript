@@ -91,7 +91,7 @@ main {
                     border: none;
                     font-size: 1.2rem;
                     font-family: 'Times New Roman', Times, serif;
-                    transition: 0.6s;
+                    transition: 0.4s;
                 }
                 
                 & #button-contato:hover{
