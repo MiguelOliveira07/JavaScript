@@ -88,6 +88,12 @@ header #menu li {
     border-radius: 10px;
     cursor: pointer;
     position: relative;
+    
+}
+
+header #menu li a{
+    text-decoration: none;
+    color: inherit;
 }
 
 header #menu li::after {

@@ -3,10 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
         <header>
             <h1 class="menu-nome nome">Miguel Oliveira</h1>
             <ul id="menu">
-                <li class="menus" id="home">Home</li>
-                <li class="menus" id="educação">Educação</li>
-                <li class="menus" id="serviços">Serviços</li>
-                <li class="menus" id="contato">Contato</li>
+                <li class="menus" id="home"><a href="/pages/index.html">Home</a></li>
+                <li class="menus" id="serviços"><a href="../pages/serviços.html">Serviços</a></li>
+                <li class="menus" id="educação"><a href="../pages/serviços.html">Formação</a></li>
             </ul>
         </header> 
     `)

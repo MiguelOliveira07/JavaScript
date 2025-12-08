@@ -1,9 +1,9 @@
 :root {
     --branco: #F7F9F9;
     --sombra: #212227;
-    --sombra-clara: rgba(255, 255, 255, 0.08);
+    --sombra-clara: rgba(255, 255, 255, 0.05);
     --cinza: #637074d3;
-    --cinza-fosco: #d6e3e72f;
+    --cinza-fosco: #d6e3e71a;
     --vidro: #fffbfee3;
 
 }
@@ -55,8 +55,8 @@ main {
 
         & img:hover {
             transform: scale(1.02);
-            border: 1px solid var(--sombra-clara);
-            box-shadow: 0px 0px 2px 0px var(--cinza-fosco);
+            border: 2px solid var(--sombra-clara);
+            box-shadow: 0px 0px 5px 0px var(--cinza-fosco);
         }
 
         & #caixa-texto {
@@ -83,9 +83,9 @@ main {
 
             & p:hover {
                 transform: translateY(-5px);
-                box-shadow: 0px 0px 11px 1px var(--cinza-fosco);
+                box-shadow: 0px 0px 5px 0px var(--cinza-fosco);
             }
-
+            
             & footer {
                 display: flex;
                 flex-flow: column wrap;
@@ -123,9 +123,11 @@ main {
                 }
 
                 & #button-contato:hover {
-                    background-color: var(--vidro);
-                    border: 3px solid var(--cinza-fosco);
-                }
+                    color: var(--branco);
+                    background-color: var(--cinza);
+                    transform: scale(1.1);
+                    box-shadow: 0px 0px 11px 1px var(--cinza-fosco);
+            }
             }
         }
     }
