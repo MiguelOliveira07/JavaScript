@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('#head_js').insertAdjacentHTML('beforebegin', `
+    document.querySelector('#page_body').insertAdjacentHTML('beforebegin', `
         <header>
-            <h1>Miguel Oliveira</h1>
+            <h1 class="menu-nome nome">Miguel Oliveira</h1>
             <ul id="menu">
                 <li class="menus" id="home">Home</li>
                 <li class="menus" id="educação">Educação</li>
