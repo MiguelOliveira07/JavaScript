@@ -212,3 +212,15 @@ main {
 
     }
 }
+
+@media (min-width: 600px) and (max-width: 900px){
+   main section div p{
+    line-height: 30px !important;
+        font-size: 18px !important;
+    }
+
+    main section span img{
+        width: 400px  !important;
+        height: 400px !important;
+    }
+}

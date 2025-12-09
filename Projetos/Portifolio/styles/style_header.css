@@ -117,10 +117,7 @@ header #menu li:hover::after {
     
 }
 
-@media (min-width: 350px) and (max-width:600px) {
-    body {
-        /* max-width: 350px; */
-    }
+@media (min-width: 350px) and (max-width:600px){
 
     header {
         justify-content: center;
@@ -141,7 +138,4 @@ header #menu li:hover::after {
         flex-flow: column nowrap;
     }
 
-    #texto-sobre-mim {
-        font-size: 14px;
-    }
 }
