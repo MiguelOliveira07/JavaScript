@@ -3,7 +3,7 @@
     --sombra: #212227;
     --sombra-clara: rgba(255, 255, 255, 0.05);
     --cinza: #637074d3;
-    --cinza-fosco: #d6e3e71a;
+    --cinza-fosco: #d6e3e737;
     --vidro: #fffbfee3;
 
 }
@@ -27,9 +27,10 @@ main {
     & section {
         display: flex;
         flex-flow: row nowrap;
-        height: 80%;
+        height: 100%;
         justify-content: space-between;
         margin: 10px;
+        gap: 20px;
         padding: 0px 0px 0px 10px;
 
         & #foto {
@@ -45,18 +46,14 @@ main {
             display: flex;
             justify-content: center;
             margin: 10px;
-            width: 250px;
-            height: 250px;
-
-            transition: transform 0.5s ease-in-out;
+            width: 300px;
+            height: 450px;
 
             border-radius: 10px;
         }
 
         & img:hover {
-            transform: scale(1.02);
-            border: 2px solid var(--sombra-clara);
-            box-shadow: 0px 0px 5px 0px var(--cinza-fosco);
+            box-shadow: 0px 0px 10px 0px var(--cinza-fosco);
         }
 
         & #caixa-texto {
@@ -94,8 +91,9 @@ main {
                 justify-content: center;
                 height: 150px;
                 width: 300px;
-
+                
                 & .links {
+                    margin-top:30px ;
                     justify-content: center;
                     display: flex;
                     flex-flow: row nowrap;
@@ -214,13 +212,75 @@ main {
 }
 
 @media (min-width: 600px) and (max-width: 900px){
+    main section{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
    main section div p{
     line-height: 30px !important;
         font-size: 18px !important;
     }
 
     main section span img{
-        width: 400px  !important;
-        height: 400px !important;
+        width: 350px  !important;
+        height: 500px !important;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    
+     main {
+        max-height: 100vh;
+        max-width: 100vw;
+    }
+
+    main section {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        /* height: 70vh; */
+
+    }
+
+    main section div p {
+        line-height: 2px;
+        word-spacing: 4px !important;
+        font-size: 18px !important;
+
+    }
+
+}
+
+@media (min-width: 1200px) {
+    main {
+        max-height: 100vh;
+        max-width: 100vw;
+    }
+
+    main section {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    main section #caixa-texto{
+        height: 600px;
+        width: 90%;
+    }
+
+    main section div p {
+        /* height: 80%; */
+        font-weight: 100;
+        line-height: 10px;
+        word-spacing: 5px !important;
+        font-size: 18px !important;
+
     }
 }
