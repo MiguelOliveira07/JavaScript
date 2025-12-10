@@ -29,6 +29,7 @@ body {
     text-align: center;
     font-size: 32px;
     margin-bottom: 40px;
+    color: var(--branco);
 }
 
 .bloco {
@@ -55,5 +56,5 @@ body {
 
 .item p {
     margin: 5px 0;
-    color: #555;
+    color: var(--cinza);
 }
