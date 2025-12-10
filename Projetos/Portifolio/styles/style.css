@@ -226,7 +226,7 @@ main {
     }
 
     main section span img{
-        width: 350px  !important;
+        width: 35 0px  !important;
         height: 500px !important;
     }
 }
@@ -265,7 +265,7 @@ main {
     main section {
         display: flex;
         flex-flow: row nowrap;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
 
     }

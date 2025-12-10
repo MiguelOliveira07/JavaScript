@@ -25,7 +25,14 @@ header .menu-nome {
     position: relative;
     display: flex;
     justify-content: center;
-    color: var(--sombra);
+    color: var(--sombra) ;
+
+}
+
+header .menu-nome.nome a {
+    text-decoration: none;
+    color: inherit ;
+
 }
 
 /* FAIXA ESCURA ATRÁS DO NOME */
@@ -34,7 +41,7 @@ header .menu-nome::before {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: var(--sombra);
+    background: var(--sombra) ;
     z-index: -1;
     /* fica atrás do texto */
 }
@@ -54,7 +61,7 @@ header .nome::before {
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--sombra);
+    background: var(--sombra) ;
     /* z-index: -1; */
 
     transition: 1s;
@@ -62,7 +69,7 @@ header .nome::before {
 
 /* Ao passar o mouse → texto fica claro */
 header .nome:hover {
-    color: var(--vidro);
+    color: var(--vidro) !important;
 }
 
 /* Ao passar o mouse → faixa escura cresce pra trás */
@@ -88,10 +95,10 @@ header #menu li {
     border-radius: 10px;
     cursor: pointer;
     position: relative;
-    
+
 }
 
-header #menu li a{
+header #menu li a {
     text-decoration: none;
     color: inherit;
 }
@@ -114,10 +121,10 @@ header #menu li:hover::after {
     box-shadow: 2px 2px 2px var(--cinza); */
 
     width: 100%;
-    
+
 }
 
-@media (min-width: 350px) and (max-width:600px){
+@media (min-width: 350px) and (max-width:600px) {
 
     header {
         justify-content: center;
