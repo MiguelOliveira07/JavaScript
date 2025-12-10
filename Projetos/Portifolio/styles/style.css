@@ -64,7 +64,17 @@ main {
             margin: 10px;
             width: 60%;
 
+            & #caixa-nome{
+                width: 95%;
+                color: var(--vidro);
+                display: flex;
+                justify-content: space-between;
+                flex-flow: row nowrap;
+
+            }
+
             & p {
+                text-align: justify;
                 padding: 30px;
                 margin: 5px;
                 word-spacing: 2px;
@@ -220,14 +230,19 @@ main {
 
     }
 
+    main section #foto img {
+                width: 300px;
+                height: 450px;
+            }
+
    main section div p{
-    line-height: 30px !important;
-        font-size: 18px !important;
+    line-height: 30px ;
+        font-size: 18px ;
     }
 
     main section span img{
-        width: 35 0px  !important;
-        height: 500px !important;
+        width: 35 0px  ;
+        height: 500px ;
     }
 }
 
@@ -246,6 +261,7 @@ main {
         /* height: 70vh; */
 
     }
+
 
     main section div p {
         line-height: 2px;
@@ -273,6 +289,10 @@ main {
     main section #caixa-texto{
         height: 600px;
         width: 90%;
+    }
+
+    main section #caixa-texto #caixa-nome{
+        margin-top: 200px;
     }
 
     main section div p {
