@@ -48,7 +48,7 @@ header .menu-nome::before {
 
 /* NOME → com animação */
 header .nome {
-    padding: 0 15px;
+    padding: 10px;
     margin-left: 5%;
     transition: 1s;
 }
@@ -67,7 +67,6 @@ header .nome::before {
     transition: 1s;
 }
 
-/* Ao passar o mouse → texto fica claro */
 header .nome:hover {
     color: var(--vidro) !important;
 }
@@ -114,12 +113,7 @@ header #menu li::after {
     transition: 0.6s ease-in-out;
 }
 
-/* Animação do hover dos links */
 header #menu li:hover::after {
-    /* background: var(--sombra);
-    color: var(--branco);
-    box-shadow: 2px 2px 2px var(--cinza); */
-
     width: 100%;
 
 }
